@@ -211,7 +211,7 @@ export default class CalendarMonthGrid extends React.Component {
               month={month}
               isVisible={isVisible}
               enableOutsideDays={enableOutsideDays}
-              modifiers={modifiers}
+              modifiers={modifiers[month.format('YYYY-MM')]}
               monthFormat={monthFormat}
               orientation={orientation}
               onDayMouseEnter={onDayMouseEnter}
